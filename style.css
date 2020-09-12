@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+  }
+
+  .navbox{
+    
+    padding: 20px;
+    top: 0;
+    background-color:#D0D0D0;
+  }
+
+
+  .navbar-nav {
+  text-align: center;
+  font-size: 20px;
+  
+  
+}
+
+.navbar h3 {
+  color: #142850;
+}
+
+
+.navbar-nav li a{
+
+    position: relative;
+   color: #696969;
+   letter-spacing: 2px;
+   text-decoration: none;  
+   transition: opacity 200ms ease-in-out;
+   overflow: hidden;
+
+
+}
+
+.navbar-nav li a::before {
+
+   content: "";
+  position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 1px;
+   transition: width 0.2s ease-out;
+   background-color: #ff5151;
+}
+
+
+.navbar-nav li a:hover::before{
+
+   width: 100%;
+  
+}
+
+
+ 
+
+.navbar-nav li a:hover {
+  color:  #000;
+}
+
+
+.navbar .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    padding: 1px 5px;
+    font-size: 20px;
+    line-height: 0.3;
+    background-color: #696969;
+  
+}
+
+
+@media only screen and (max-width: 990px) {
+
+  
+
+  .navbar .navbar-toggler {
+      padding: 1px 5px;
+      font-size: 20px;
+      line-height: 0.3;
+      background-color: #696969;
+}
+
+.navbar-nav .active {
+  padding-right: 16px;
+}
+  
+  .card {
+    margin-right: 20px;
+  }
+}
+
+    
+
+
+
+
+
+/* backgrounf image*/
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.bg-image{
+  width: 100%;
+  padding-top: 42%;
+  background: url(./img/bg.jpg) no-repeat center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+
+
+
+
+/*  Code for heading and featured Products */
+
+.head1 h1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 60px;
+  color: #142850;
+}
+
+.head1 h4{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #142850;
+}
+
+.prod1 h2{
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 100px auto;
+   color: #27486d;
+   max-width: 600px;
+   position: relative;
+  
+}
+
+
+.prod1 h2:before{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #3792cb;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.prod1 h2:after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #3792cb;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+ 
+ span{
+  background: #fff;
+ }
+
+
+ /* card design */
+
+ p{
+  font-weight: 500;
+}
+
+ .card{
+  border-radius: 0;
+  box-shadow: 5px 5px 10px #a9a9a9;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  margin-top: 80px;
+  height: 85%;
+  margin-left: 20px;
+
+
+}
+.card h3{
+  padding-top: 15px;
+  color: #142850;
+}
+
+ .card:hover{
+  background-image: -webkit-linear-gradient(right,#00abcc,#b5e2ff);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 10px #a9a9a9;
+}
+
+
+.card:hover h3{
+  color: #fff;
+  padding-top: 15px;
+}
+
+
+.w-100{
+    width:100%;
+    height:100%;
+}
+
+
+
+.inner1{
+  overflow: hidden;
+  }
+  
+  .inner2{
+  overflow: hidden;
+  }
+  
+  .inner1 img{
+  transition: all 1.5s ease;
+  }
+  
+  .inner1:hover img{
+  transform: scale(1.5);
+  }
+  
+  .inner2 img{
+  transition: all 1.5s ease;
+  }
+  
+  .inner2:hover img{
+  transform: scale(1.5);
+  }
+
+  .prod-2 h4{
+    text-align: center;
+    margin-top: 60px;
+    
+  }  
+  
+
+  .prod-2 btn-primary{
+    background-color:  #27496d;
+    padding-bottom: 10px;
+  }
